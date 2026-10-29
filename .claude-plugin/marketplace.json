@@ -1,0 +1,15 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "software-team",
+  "description": "Cost-aware agent software team for Claude Code",
+  "owner": { "name": "Gonzalo Gomez" },
+  "plugins": [
+    {
+      "name": "software-team",
+      "description": "Tech Lead + Frontend Dev + Backend Dev + QA, sized per requirement, synced with Jira/Notion/chat.",
+      "version": "0.1.0",
+      "source": "./",
+      "category": "development"
+    }
+  ]
+}
