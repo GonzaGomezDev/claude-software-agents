@@ -7,7 +7,7 @@
     {
       "name": "software-team",
       "description": "Tech Lead + Frontend Dev + Backend Dev + QA, sized per requirement, synced with Jira/Notion/chat.",
-      "version": "0.1.0",
+      "version": "0.4.0",
       "source": "./",
       "category": "development"
     }

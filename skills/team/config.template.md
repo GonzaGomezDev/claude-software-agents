@@ -8,6 +8,11 @@ dev_effort: high      # low | medium | high | xhigh
 qa_model: opus        # inherit | opus | sonnet | haiku
 qa_effort: medium     # with qa_model: sonnet, use high
 max_fix_rounds: 3     # QA fail -> dev fix rounds before escalating to you
+frontend_skills:      # skills the frontend dev loads before UI work, comma-separated, e.g. frontend-design:frontend-design
+ui_url:               # local URL where the UI runs (e.g. http://localhost:3000), used by QA for the visual check
+ui_auth:              # optional Playwright storage state for pages behind login (e.g. .team/auth.json)
+pr: off               # on = after QA PASS the Tech Lead commits on team/<slug>, pushes and opens a ready-for-review PR with screenshots (needs gh >= 2.99)
+pr_base:              # PR base branch; empty = repo default
 ---
 
 Project notes for the team (stack, test commands, conventions) go below — keep it short, every agent brief may reference it.

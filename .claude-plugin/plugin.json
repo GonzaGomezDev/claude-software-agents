@@ -1,6 +1,6 @@
 {
   "name": "software-team",
-  "version": "0.1.0",
+  "version": "0.4.0",
   "description": "A cost-aware software team: Tech Lead (orchestrator), Frontend Dev, Backend Dev and QA. Scales from solo to parallel devs by requirement size, syncs tasks with Jira, Notion or a local board.",
   "author": { "name": "Gonzalo Gomez" },
   "license": "MIT",
