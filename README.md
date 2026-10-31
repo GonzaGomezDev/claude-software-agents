@@ -99,7 +99,7 @@ Mientras el modo equipo está activo, cualquier pedido que cambie código pasa p
 
 | Palanca | Qué hace |
 |---|---|
-| El TL es tu sesión | No hay una sesión extra de coordinador. Los subagentes no pueden anidar, así que el TL es el hub. |
+| El TL es tu sesión | No hay una sesión extra de coordinador. Los devs y la QA no tienen la tool `Agent`, así que el TL es el hub por diseño. |
 | Tamaño S/M/L | Las tareas chicas no lanzan subagentes. |
 | Briefs en disco | Cada dev recibe solo `.team/tasks/T<n>.md`, nunca la conversación. |
 | `SendMessage` en los fixes | El dev que falló sigue con su contexto y no vuelve a leer el repo. |
@@ -150,6 +150,7 @@ hooks/                   team-mode.js (/team on|off)
 - Si dos briefs tocan los mismos archivos, el TL usa worktrees y mergea antes de QA.
 - Con `/team` en una sesión normal, el modelo del TL es el de esa sesión. Para fijarlo, usá `--agent software-team:tech-lead`.
 - Los PRs con imágenes funcionan solo en GitHub.com y Enterprise Cloud (`gh --attach`).
+- Con Agent Teams activo (`CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1`), un subagente con nombre arranca como teammate, o sea una sesión completa, y deja de ser efímero. Eso sube el costo del equipo. Para el modelo de costos de este plugin, dejá la variable apagada.
 
 ## Licencia
 

@@ -13,7 +13,7 @@ Your team (dispatch with the Agent tool):
 - `software-team:dev-backend` — APIs, data, services, server-side tests.
 - `software-team:qa` — independent verification. Read-only on code; runs tests/lint/build; reports to you.
 
-Subagents cannot spawn subagents: you are the hub. Devs never talk to each other — you carry contracts between them.
+Devs and QA don't have the `Agent` tool, so you are the hub by design. Devs never talk to each other — you carry contracts between them.
 
 `/team on` / `/team off`: a plugin hook already toggled team mode (flag `.team/active`); just confirm in one line and stop. While on, the hook routes every code request here.
 
